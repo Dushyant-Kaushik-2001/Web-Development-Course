@@ -1,0 +1,74 @@
+<!--------------------------------------------------iFrames in HTML------------------------------------------------------------------------
+
+🔹 iFrames (Inline Frames) web development mein ek useful feature hain jo humko ek page ke andar doosra page embed karne ka mauka dete hain. 
+
+🔹 Ye humko apne webpage ke andar external content ko directly load karne ki suvidha dete hain.
+ 
+🔹 iFrame ek HTML element hai jo humko ek inline frame create karne ki suvidha deta hai jisme hum kisi doosre web page ko apne page ke andar
+embed kar sakte hain.
+
+🔹 Iframes ka use ek webpage ke andar doosra webpage ya content dikhane ke liye hota hai. 
+
+🔹 Iska use Google Maps, YouTube videos, PDFs ya kisi aur website ka data embed karne ke liye hota hai.
+
+
+----------------------------------------------------------Why Use iFrames?------------------------------------------------------------------
+
+1. Content Isolation: iFrames humko third-party content ko isolate karne ki suvidha dete hain, jo security ko enhance karta hai.
+
+2. Modularity: hum easily external plugins, widgets, ya content ko apne page mein embed kar sakte hain.
+
+3. Resource Separation: iFrame ka content apne aap alag se load hota hai, jo page ki overall loading ko optimize karta hai.
+
+🔹 Basic Syntax:
+-------------------------------------------------------------------------------------------------------------------------------------------->
+<iframe src="URL" width="width" height="height"></iframe>
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------
+🔹 Example 1. Basic Iframe Example
+✔ Isse hum Wikipedia ka page apni website me dikha sakte hain.
+✔ Width aur Height ka use iframe ka size set karne ke liye hota hai.
+⚠ Note: Google aur kuch websites security reasons ki wajah se iframe me load nahi hoti. 
+-------------------------------------------------------------------------------------------------------------------------------------------->
+<iframe src="https://www.wikipedia.org/" width="600" height="400"></iframe>
+
+
+<!-----------------------------------------------------------------------------------------------------------------------------------------
+🔹 Example 2. YouTube Video Embed
+Agar humhe YouTube video website pe dikhani ho, toh <iframe> ka use kar sakte hain.
+✔ allowfullscreen → Video full screen me open ho sakta hai.
+✔ YouTube ka embed link directly use kar sakte ho.
+--------------------------------------------------------------------------------------------------------------------------------------------->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------
+🔹 Example 3. Google Maps Embed 
+Agar humhe Google Maps location dikhani ho, toh iframe ka use kar sakte hain.
+✔ Google Maps ka embed link directly iframe me paste kar sakte ho.
+--------------------------------------------------------------------------------------------------------------------------------------------->
+<iframe 
+    width="600" height="450" 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151..." 
+    allowfullscreen>
+</iframe>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------
+🔹 Example 4. Embed a PDF File
+Agar humhe PDF document embed karna ho, toh iframe ka use kar sakte hain.
+✔ Yeh PDF file direct website me open karega.
+-------------------------------------------------------------------------------------------------------------------------------------------->
+<iframe src="document.pdf" width="600" height="500"></iframe>
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------
+🔹Example 5. Kisi Doosri Website ka Content Embed Karna
+Agar hum kisi doosri website ka ek section apni website me dikhana chahte ho, toh iframe ka use hota hai.
+✔ Humhari website pe Example.com ka news section show hoga.
+✔ BUT: Sabhi websites iframe allow nahi karti (Security reasons ke liye).
+------------------------------------------------------------------------------------------------------------------------------------------->
+<iframe src="https://www.example.com/news" width="700" height="400"></iframe>
+
+

@@ -1,0 +1,52 @@
+<!------------------------------------------------🎥 <video> Tag----------------------------------------------------------------------------
+ 
+🔹 Agar humhe apne webpage pe video add karni ho, toh hum <video> tag ka use karenge. 
+
+🔹 Iske andar bohot saare attributes hote hain jo video ke playback aur appearance ko control karne mein madad karte hain.
+
+🔹 Website me videos dikhane ke liye <video> tag ka use hota hai.
+
+🔹 Basic Syntax: 
+-------------------------------------------------------------------------------------------------------------------------------------------->
+<video src="video.mp4" controls></video>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------
+🔹 Example 1: Basic Video
+--------------------------------------------------------------------------------------------------------------------------------------------->
+<video width="500" controls>
+     <source src="video.mp4" type="video/mp4">                        ✔ controls → Play, Pause aur Volume buttons dikhane ke liye.
+</video>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------
+🔹 Example 2: Autoplay aur Looping Video
+-------------------------------------------------------------------------------------------------------------------------------------------->
+<video width="500" autoplay loop muted>                             ✔ autoplay → Video automatically play hoga.
+    <source src="background.mp4" type="video/mp4">                  ✔ loop → Video end hone ke baad phir start hoga.
+</video>                                                            ✔ muted → Default me mute hoga.
+
+
+<!-----------------------------------------Common Attributes for <video> Tag:----------------------------------------------------------------
+
+1. src
+🔹 Ye attribute video ka path define karta hai.
+    
+2. controls
+🔹 Isse play, pause, aur volume control ka option video pe aata hai.
+    
+3. autoplay
+🔹 Agar hum chahte hain ke video page load hote hi automatically chalne lage, toh ye use kar sakte ho.
+    
+4. loop
+🔹 Ye video ko repeat karne ke liye use hota hai. Jab video khatam ho, wo dubara se chalne lagti hai.
+    
+5. muted
+🔹 Agar hum chahte ho ki video muta ho (volume off ho), toh is attribute ka use karo.
+    
+6. poster
+🔹 Jab tak video load nahi hota, tab tak ek image dikhane ke liye use hota hai.
+    
+7. width aur height
+🔹 Hum video ka size set kar sakte hain.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------->

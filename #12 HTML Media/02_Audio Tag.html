@@ -1,0 +1,67 @@
+<!-----------------------------------------------------🎶 <audio> Tag-------------------------------------------------------------------------
+
+🔹 Agar humhe apne webpage pe audio file embed karni ho, toh hum <audio> tag ka use karenge. Iske bhi bohot saare controls milte hain.
+ 
+🔹 Website me music ya sound add karne ke liye <audio> tag ka use hota hai.
+
+🔹 Basic Syntax:
+------------------------------------------------------------------------------------------------------------------------------------------->
+<audio src="audio.mp3" controls></audio>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------
+🔹 Example 1: Basic Audio
+----------------------------------------------------------------------------------------------------------------------------------------------->
+<audio controls>                                                     ✔ controls → Play, Pause aur Volume buttons dikhane ke liye.
+    <source src="music.mp3" type="audio/mpeg">                       ✔ <source> → Alag-alag format ki audio files ke liye.
+</audio>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------
+🔹 Example 2: Multiple Formats for Better Support
+---------------------------------------------------------------------------------------------------------------------------------------------->
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.ogg" type="audio/ogg">                          ✔ Alag-alag formats add karne se zyada browsers support karenge.
+    Your browser does not support the audio tag.
+</audio>
+
+
+<!---------------------------------------------Common Attributes for <audio> Tag:---------------------------------------------------------
+
+1. src
+🔹 Ye attribute audio file ka path define karta hai.
+
+2. controls
+Isse audio ka play, pause, volume control dikhne lagta hai.
+
+3. autoplay
+🔹 Agar tum chahte ho ki audio page load hote hi chalna start ho jaye, toh ye attribute use karo.
+
+4. loop
+🔹 Agar audio ko repeat karna ho, toh loop lagao.
+
+5. muted
+🔹 Ye audio ko mute kar dega, yani sound nahi aayega.
+
+6. preload
+🔹 Ye decide karta hai ki audio file kaise load ho jab page open hota hai.
+
+Preload Attribute ki Values:
+
+1. none: 
+Ye default value hai. 
+Matlab, browser audio file ko preload nahi karega. 
+Audio file tabhi download hona start hoga jab user play karega.
+
+2. metadata: 
+Sirf audio ka duration aur basic info load hota hai. 
+Iska matlab hai ki sirf metadata (jaise ki duration aur basic info) preload hoga.
+Iska use tab hota hai jab humhe audio ki duration ya basic info user ko dikhani ho, bina audio ko fully load kiye.
+
+3. auto: 
+Pure audio file ko background mein load kar leta hai.
+Ye browser ko bolta hai ki poori audio file ko preload karo jab page load ho.
+Matlab audio file ko background mein load kiya jaayega, taki jab user play kare, audio ready ho.
+Lekin, ye page ki loading ko affect kar sakta hai agar audio file ka size bada ho.
+
+Example:
+<audio src="audio.mp3" preload="auto" controls></audio>

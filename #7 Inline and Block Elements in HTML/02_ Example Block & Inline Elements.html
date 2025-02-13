@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Block vs Inline Elements</title>
+    <style>
+        .block {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid blue;
+        }
+
+        .inline {
+            background-color: lightgreen;
+            padding: 5px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Block Element -->
+    <div class="block">Yeh ek Block element hai (DIV). Yeh full width leta hai.</div>
+
+    <!-- Inline Elements Inside a Block -->
+    <p>Yeh ek <span class="inline">Inline element (SPAN)</span> hai jo same line me rahega.</p>
+
+    <!-- Multiple Inline Elements -->
+    <p>
+        <b class="inline">Bold Text</b> |
+        <i class="inline">Italic Text</i> |
+        <a href="#" class="inline">Link</a>
+    </p>
+
+</body>
+
+</html>
+
+
+<!-----------------------------------------------------📝 Explanation-----------------------------------------------------------------------
+
+✔ <div class="block"> → Yeh ek block element hai, jo full width le raha hai.
+✔ <span class="inline"> → Yeh inline element hai, jo same line me rahega.
+✔ <b>, <i>, <a> → Yeh sab inline elements hain jo ek hi line me dikh rahe hain.
+
+---------------------------------------------------------------------------------------------------------------------------------------------->

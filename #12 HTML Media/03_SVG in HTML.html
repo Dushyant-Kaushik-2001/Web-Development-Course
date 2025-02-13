@@ -1,0 +1,63 @@
+<!-----------------------------------------------SVG (Scalable Vector Graphics)-----------------------------------------------------------
+
+SVG (Scalable Vector Graphics) ek bahut powerful tool hai web development mein, jo vector-based graphics ko create karne ke liye use hota hai. 
+
+Ye high-quality graphics ko kisi bhi size pe crisp aur clear dikhane ka option deta hai, bina quality loss ke.
+ 
+
+-----------------------------------------------------------Why Use SVG?--------------------------------------------------------------------
+
+1. Scalability: SVG images ko bina quality lose kiye indefinitely resize kiya ja sakta hai, jo responsive web design ke liye perfect hai.
+
+2. File Size: SVG files ka size kaafi chhota hota hai, especially simple shapes aur icons ke liye.
+
+3. Flexibility: SVG ko CSS aur JavaScript ke through easily style, animate, aur manipulate kiya ja sakta hai.
+
+
+-------------------------------------------------------How to Embed SVG in HTML--------------------------------------------------------------
+
+1. Inline SVG: HTML mein directly SVG XML code likhna.
+
+2. Using <img> Tag: <img> tag ka use karke external SVG file ko embed karna.
+
+3. Using CSS: CSS mein background-image ke through SVG ko background image ke roop mein use karna.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Example 1: Inline SVG
+Is example mein ek circle create kiya gaya hai jo red color ka hai aur border black hai.
+------------------------------------------------------------------------------------------------------------------------------------------->
+<svg height="100" width="100">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+</svg>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------
+Example 2: <img> Tag
+Yahan, hum <img> tag ka use kar rahe hain aur external SVG file ko link kar rahe hain.
+-------------------------------------------------------------------------------------------------------------------------------------------->
+<img src="image.svg" alt="Sample SVG">
+
+
+<!-----------------------------------------------------------------------------------------------------------------------------------------
+Example 3: CSS Background
+Ismein hum SVG ko background image ke roop mein use kar rahe hain.
+---------------------------------------------------------------------------------------------------------------------------------------------->
+.background {
+    background-image: url('image.svg');
+}
+
+<!-------------------------------------------------------SVG Attributes--------------------------------------------------------------------
+
+1. width aur height: Dimensions set karte hain.
+
+2. viewBox: Coordinate system set karta hai.
+
+3. fill aur stroke: Color define karte hain (fill ke liye inside color aur stroke ke liye border color).
+
+Example 4: Simple Icon
+Ye ek simple square icon hai jo blue color ka hai aur black border ke saath.
+--------------------------------------------------------------------------------------------------------------------------------------------->
+<svg height="30" width="30">
+    <rect width="30" height="30" style="fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)" />
+</svg>
+
