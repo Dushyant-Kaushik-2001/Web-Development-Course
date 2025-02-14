@@ -1,0 +1,68 @@
+/*---------------------------------------------------What is CSS?--------------------------------------------------------------------------
+
+1. CSS ka full form Cascading Style Sheets hai. Ye ek stylesheet language hai jo HTML pages ko style dene ke liye use hoti hai.
+
+2. Agar HTML structure banata hai, to CSS us structure ko sundar aur attractive banata hai.
+
+
+---------------------------------------------------Why the word "cascade"?------------------------------------------------------------------
+
+"Cascade" ka matlab hota hai priority system jo decide karta hai ki kaunse CSS rules apply honge. Agar ek element pe multiple rules lag 
+rahe hain, to jo specific aur latest rule hoga, wahi apply hoga.
+
+
+-----------------------------------------------------------Why use CSS?---------------------------------------------------------------------
+
+1. CSS ka use web pages ko sundar aur user-friendly banane ke liye hota hai.
+
+2. For example: Socho ek kitaab hai jo sirf plain text me likhi hai – dekhne me boring lagegi na?
+Ab wahi kitaab colors, fonts, aur styles ke saath ho, to padne ka maza aa jayega.Yhi kaam CSS karta hai ek web page ke saath! 
+
+
+-------------------------------------------------------How does CSS work?--------------------------------------------------------------------
+
+1. CSS HTML ke elements ko select karta hai aur unpe styles apply karta hai.
+
+2. Jab hum kisi HTML element par CSS apply karte hain, toh CSS us element ka color, size, position, animation, spacing, font style aur 
+bahut kuch control kar sakta hai.
+
+3. Example CSS Rule:
+
+selector {
+    property: value;
+}
+
+Here:
+Selector – kis element pe style lagana hai (jaise <p>, <h1>, .class, #id)
+Property – kya change karna hai (jaise color, font-size, margin)
+Value – us property ka kya value hoga (jaise red, 16px, 10px)
+
+4. Example:
+
+p {
+    color: blue;
+    font-size: 18px;
+}
+Ye rule sabhi <p> tags ka color blue aur font-size 18px kar dega.
+
+
+------------------------------------------------------Key Features of CSS:--------------------------------------------------------------------
+
+✅ Web pages ka layout aur style banata hai.
+✅ HTML aur XML documents ke saath kaam karta hai.
+✅ Responsive design banane me madad karta hai (mobile, tablet, PC ke liye).
+✅ Hover effects aur animations create kar sakta hai.
+✅ Modularized CSS (ye alag-alag modules me aata hai, versions pe depend nahi karta).
+✅ Code reusability – ek hi CSS file multiple pages pe use kar sakte hain.
+
+
+----------------------------------------------------------A Bit of History---------------------------------------------------------------------
+
+1. CSS ko Håkon Wium Lie ne banaya tha.
+
+2. Pehle websites sirf text-based hoti thi, jo research ke liye use hoti thi.
+
+3. Dheere-dheere attractive aur interactive websites ki demand badh gayi, isliye CSS ka development hua.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------*/

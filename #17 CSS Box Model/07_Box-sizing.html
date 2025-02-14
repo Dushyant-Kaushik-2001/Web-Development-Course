@@ -1,0 +1,42 @@
+<!---------------------------------------------🎯 Box Model Me Ek Important Concept - box-sizing---------------------------------------------
+
+1. By default, agar hum width: 300px aur padding: 20px set karte hain, toh total width 340px ho jayegi.
+
+2. Agar hum border-box use karenge, toh width fix 300px hi rahegi.
+
+👉 box-sizing: border-box; se padding aur border, width me include ho jati hai.
+
+--------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        .box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: border-box;                                                      /* Total width fix karega */
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">This is a Styled Box</div>
+</body>
+</html>
+
+<!----------------------------------------------------------📌 Final Summary-----------------------------------------------------------------
+
+Property	                      Kaam	                                                    Example
+
+🔹Content	                Jo box ke andar likha hota hai	                          width: 200px; height: 100px;
+🔹Padding	                Content aur Border ke beech ka space	                       padding: 20px;
+🔹Border	                Box ka outer frame	                                         border: 5px solid black;
+🔹Margin	                Dusre elements ke beech ka space	                               margin: 30px;
+🔹box-sizing	            Width fix rakhne ke liye	                                  box-sizing: border-box;
+
+-------------------------------------------------------------------------------------------------------------------------------------------------->

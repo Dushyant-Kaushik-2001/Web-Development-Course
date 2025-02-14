@@ -1,0 +1,54 @@
+<!---------------------------------------------------Kuch Aur Selectors----------------------------------------------------------------------
+
+
+--------------------------------------------------6️⃣ Attribute Selector ([attribute])------------------------------------------------------
+
+🔹 Specific attribute wale elements ko select karta hai.
+
+🔹 Jo elements specific attribute rakhte hain unko target karta hai.
+
+🔹 Example:
+
+input[type="text"] {
+    border: 2px solid blue;
+    padding: 5px;
+}
+<input type="text" placeholder="Enter your name">
+<input type="password" placeholder="Enter password">
+
+🔹 Example Output: Sirf text input ka border blue hoga, lekin password field par koi effect nahi padega.
+
+
+-------------------------------------------------7️⃣ Pseudo-Class Selector (:state):-----------------------------------------------------------
+
+🔹 Kisi element ki special state par styling lagane ke liye use hota hai.
+
+Example: hover (Mouse le jane par effect)
+
+button:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+<button>Hover Me</button>
+
+🔹 Example Output: Jab user button par mouse le jayega toh iska background red aur text white ho jayega.
+
+
+-----------------------------------------------8️⃣ Pseudo-Element Selector (::part):---------------------------------------------------------- 
+
+🔹 Element ke kisi specific part par style lagane ke liye
+
+🔹 Example: Pehle letter ko style dena
+
+p::first-letter {
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+}
+<p>This is a sample paragraph with styled first letter.</p>
+
+🔹 Example Output: Paragraph ka pehla letter bada aur red color me show hoga.
+ 
+
+------------------------------------------------------------------------------------------------------------------------------------------------>

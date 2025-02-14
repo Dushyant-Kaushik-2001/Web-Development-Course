@@ -1,0 +1,67 @@
+<!-------------------------------------------------------1️⃣ Universal Selector (*) 🌎-----------------------------------------------------
+
+🔹 Ye sare HTML elements pe apply hota hai (matlab poore page pe ek sath style lagta hai).
+
+🔹 Ye poore page ke sabhi elements par apply hota hai.
+
+🔹 Iska use default margin & padding hatane ke liye hota hai.
+ 
+🔹 Syntax:
+
+* {
+    color: purple;
+    text-align: center;
+}
+
+Example 1:
+-------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Selector</title>
+    <style>
+        * {
+            color: purple;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>Welcome to</p>
+    <h1>CSS</h1>
+</body>
+</html>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------
+📌 Output: Sare elements ka text purple aur center aligned hoga.
+
+Example 2:
+------------------------------------------------------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Selector</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+    </style>
+</head>
+<body>
+    <p>Welcome to</p>
+    <h1>CSS</h1>
+</body>
+</html>
+<!---------------------------------------------------------------------------------------------------------------------------------------------
+Example Output:
+Ye code poore page ki margin aur padding remove karega aur Arial font apply karega.
+---------------------------------------------------------------------------------------------------------------------------------------------- -->
+

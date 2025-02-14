@@ -1,0 +1,62 @@
+/*-------------------------------------------------------Syntax of CSS-------------------------------------------------------------------------
+
+-----------------------------------------------------CSS Syntax: Kaise Likhein?🖌️---------------------------------------------------------
+
+CSS ek rule-based language hai, jisme har rule do cheezon se banta hai:
+
+1️. Selector – Kaunse HTML element ko style dena hai?
+
+2️. Declaration Block – Kaunsi properties aur values apply karni hain?
+
+3. The general syntax for writing CSS:
+
+selector {
+    property: value;
+}
+
+👉 Breakdown:
+🔹 Selector: Koi bhi HTML element jise hum style dena chahte hain (jaise p, h1, div, etc.)
+🔹 Property: CSS style ka naam (jaise color, font-size, background-color).
+🔹 Value: Property ka jo bhi value hona chahiye (jaise red, 16px, bold).
+🔹 Semi-colon (;): Har property ke baad likhna ZARURI hai!
+
+
+4. Example 1: Ek Simple CSS Rule
+
+h2 {
+    color: blue;
+}
+
+👉 Breakdown:
+🔹 h2 → Selector (h2 elements ko target karega)
+🔹 color → Property (text ka color change karega)
+🔹 blue → Property Value (text blue ho jayega)
+
+
+5. Example 2: Multiple Properties ek saath
+
+button {
+    color: white;
+    background-color: black;
+    border: transparent;
+    border-radius: 5px;
+}
+
+👉 Breakdown:
+🔹 button → HTML button ko target karega
+🔹 color: white; → Button text white ho jayega
+🔹 background-color: black; → Button ka background black hoga
+🔹 border: transparent; → Button ka border invisible hoga
+🔹 border-radius: 5px; → Button thoda rounded dikhega
+
+
+---------------------------------------------------------------Conclusion 🎯----------------------------------------------------------------
+
+✅ CSS me Selector + Properties + Values ka istemal hota hai
+
+✅ Har property ke baad semi-colon (;) lagana zaroori hai
+
+✅ Ek selector ke andar multiple properties likh sakte hain
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------*/

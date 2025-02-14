@@ -1,0 +1,128 @@
+/*--------------------------------------------------------Ways to add CSS----------------------------------------------------------------------
+
+There are three different ways to add CSS to an HTML page, which are:
+
+1️⃣ Inline CSS (Direct element ke andar style likhna)
+2️⃣ Internal CSS (<style> tag ka use karke ek hi page ke liye style likhna)
+3️⃣ External CSS (Alag .css file me likhna aur HTML me link karna)
+
+-----------------------------------------------------1️⃣ Inline CSS 📝:--------------------------------------------------------------------
+
+🔹 Ye direct kisi HTML tag ke andar likha jata hai. Bas style attribute ka use karna hota hai.
+
+🔹 Jab kisi ek specific element ko style dena ho, tab inline CSS use hoti hai.
+
+🔹 Directly HTML element ke andar style attribute me likhte hain.
+
+🔹 Example 1: <p style="color: blue; font-size: 20px;">Yeh ek blue color ka paragraph hai.</p>
+
+🔹 Example 2: 
+
+<h1 style="color: purple;">I'm Dushyant</h1>
+<h2>I'm Dushyant Kaushik</h2>
+
+🔹 Yaha <h1> ka color purple ho jayega.
+
+🔹 <h2> me koi style nahi apply hoga.
+
+🚨 Downside: Agar project bada ho gaya to har element me style likhna bahut mushkil ho jayega.
+
+🟢 Advantage: Sirf ek element ke liye quick styling karni ho toh useful hai.
+
+🔴 Disadvantage: Bar-bar likhna padta hai, jisse code bada aur messy ho jata hai.
+
+
+-------------------------------------------------------2️⃣ Internal CSS 🏠---------------------------------------------------------------
+
+🔹 Ye HTML file ke <head> section mein likha jata hai. CSS rules ko <style> tag ke andar likhna hota hai.
+
+🔹 Agar ek hi page ke multiple elements ko style dena ho, to internal CSS use karte hain.
+
+🔹 Head section ke andar <style> tag me likhte hain.
+
+🔹 Example:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS Example</title>
+    <style>
+        p {
+            color: red;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a  red color paragraph.</p>
+</body>
+</html>
+
+🔹 Sare <p> tags ka color red ho jayega.
+
+🔹 Internal CSS ka code head section me hona chahiye.
+
+🟢 Advantage: Ek hi file ke andar multiple elements ko style kar sakte hain.
+
+🔴 Disadvantage: Agar website badi ho jaaye toh CSS code manage karna mushkil ho jata hai.
+
+
+---------------------------------------------------------3️⃣ External CSS 🌍------------------------------------------------------------
+
+🔹 Is tareeke mein CSS ko ek alag file (style.css) mein likha jata hai.
+
+🔹 HTML file ke <head> section mein <link> tag ke through CSS file ko connect kiya jata hai.
+
+🔹 Agar ek hi style ko multiple pages me use karna ho, to external CSS use karte hain.
+
+🔹 Alag se .css file banakar usko HTML file me link karte hain.
+
+🔹 Step 1: Ek CSS File (style.css) Banao
+
+p {
+    color: green;
+    font-size: 24px;
+}
+
+🔹 Step 2: HTML File Me Link Karo
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External CSS Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>This is a green color paragraph.</p>
+</body>
+</html>
+
+🔹 HTML aur CSS alag rakhne se code clean aur reusable hota hai.
+
+🔹 Badi websites me external CSS kaafi useful hota hai!
+
+🟢 Advantage: Website ka structure aur style separate rehta hai, jo maintain karna easy hota hai.
+
+🔴 Disadvantage: Agar internet connection slow ho toh external CSS load hone me time lag sakta hai.
+
+
+----------------------------------------CSS Precedence (Kaunsa CSS Pehle Apply Hoga?) 🏆-------------------------------------------------------
+
+Agar ek hi element pe Inline CSS, Internal CSS, aur External CSS tino use ho, to sabse jyada priority hoti hai:
+
+✅ Inline CSS (Sabse highest priority)
+✅ Internal CSS (Uske baad apply hoga)
+✅ External CSS (Sabse kam priority hogi)
+
+----------------------------------------------------------🎯 Conclusion---------------------------------------------------------------------
+
+🔹 Inline CSS – Sirf ek element ke liye (priority sabse high)
+🔹 Internal CSS – Ek page ke liye
+🔹 External CSS – Multiple pages ke liye (best practice)
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------*/

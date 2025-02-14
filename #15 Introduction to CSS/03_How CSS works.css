@@ -1,0 +1,89 @@
+/*------------------------------------------------------How CSS works?------------------------------------------------------------------------
+
+Pehli baar jab humne CSS likha, tab shayad clear nahi hua ki CSS actual me kaise kaam karta hai.
+Chalo isko step-by-step samajhte hain!
+
+CSS Ka Working Process::
+
+1️⃣ User ek website ka URL type karta hai aur Enter dabata hai.
+
+2️⃣ Browser server se HTML file fetch karta hai.
+
+3️⃣ HTML file ko ek structure (DOM) me convert karta hai.
+
+4️⃣ Browser saari linked files (CSS, images, fonts, etc.) download karta hai.
+
+5️⃣ Browser CSS ko analyze karta hai aur selectors ke hisaab se group karta hai.
+
+6️⃣ CSS properties ko unke respective HTML elements ke sath link karta hai.
+
+7️⃣ Render Tree banta hai jo screen pe dikhne wala final structure hota hai.
+
+8️⃣ Website browser me "paint" ho jati hai, yani dikhai dene lagti hai.
+
+Ye pura process ek few milliseconds me hota hai! 🚀
+
+
+---------------------------------------------------------What is a DOM?🌳---------------------------------------------------------------------
+
+1. DOM ka Full Form: Document Object Model
+
+2. DOM ek tree structure hota hai jo HTML document ka visual representation hai. Isme har HTML tag ek node hota hai, aur nodes ka 
+parent-child relationship hota hai.
+
+3. For Example: 
+Agar HTML ye hai:
+
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <p>This is my first page.</p>
+  </body>
+</html>
+
+To iska DOM tree kuch aisa dikhega:
+
+         [html]
+        /      \
+    [head]    [body]
+      |         |   \
+  [title]   [h1]   [p]
+      |       |     |
+  "My Page"  "Welcome"  "This is my first page."
+
+🔹 HTML sabse bada node hai (root node).
+🔹 Head aur Body uske child nodes hain.
+🔹 Title, h1, p elements further child nodes hain.
+
+Ye DOM browser ka blueprint hota hai jo batata hai ki website ka structure kaise dikhega.
+
+
+--------------------------------------------------CSS DOM Pe Kaise Apply Hota Hai?-----------------------------------------------------------
+
+🔸 Browser DOM tree banata hai.
+🔸 CSS ka har rule respective elements ke sath attach hota hai.
+🔸 Ek well-structured Render Tree ban jata hai.
+🔸 Render Tree finally "paint" hota hai screen pe.
+🔸 For Example:
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+🔹 Ye CSS DOM ke <h1> node pe apply hoga.
+🔹 <h1> ka text blue ho jayega aur center align ho jayega.
+🔹 Final output screen pe dikhai dega.
+
+
+-------------------------------------------------------------Conclusion 🎯------------------------------------------------------------------
+
+🔹 CSS ek HTML page ko style dene ka tarika hai.
+🔹 Browser HTML ko DOM me convert karta hai.
+🔹 CSS DOM ke elements pe apply hota hai.
+🔹 Render Tree ke through website ka final look create hota hai.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------*/

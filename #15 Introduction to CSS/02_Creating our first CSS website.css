@@ -1,0 +1,63 @@
+/*------------------------------------------------------Creating our first CSS website-------------------------------------------------------
+
+Apni Pehli CSS Website Banayein! Is tutorial me hum apni pehli CSS website banayenge.
+Isko 4 parts me divide karenge:
+
+1️⃣ Environment Setup karna.
+2️⃣ Ek HTML Page banana.
+3️⃣ CSS ko HTML me add karna.
+4️⃣ Live previw se page review karna.
+
+
+--------------------------------------------------1️⃣ Environment Setup Karna---------------------------------------------------------------
+
+1. Pehle hume ek code editor chahiye jisme hum apni website likh sakein jaise ki VS Code.
+
+2. VS Code toh install hoga hi agr css seekh rhe ho bhut common si baat hai.
+
+3. VS Code mein live preview extension download kro.
+
+
+----------------------------------------------------2️⃣ Ek HTML Page Banana------------------------------------------------------------------
+
+1. Agar humhe HTML nahi aata, to pehle HTML tutorial dekhein. Agar HTML aata hai, to nayi file banao aur naam do: 📄 index.html
+
+2. HTML Boilerplate Generate Karo: VS Code me index.html open karo then ! likho aur Enter dabao Ek default HTML structure generate ho jayega.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First CSS Website</title>
+</head>
+<body>
+    I'm learning CSS with my favorite Dushyant Kaushik.
+</body>
+</html>
+
+
+-----------------------------------------------------3️⃣ CSS ko HTML me Add Karna-------------------------------------------------------------
+
+1. Ab hum HTML page ko style dene ke liye CSS add karenge. 
+
+2. Hum add krenge Internal CSS (HTML ke andar likhna) matlab Head tag ke andar <style> tag me CSS likhenge.
+
+3. Isse text center me aayega, color white ho jayega aur background purple ho jayega.
+
+<style>
+  body {
+    text-align: center;
+    color: white;
+    background-color: purple;
+  }
+</style>
+
+
+------------------------------------------------------4️⃣ Apni Pehli Website Live Dekho!-----------------------------------------------------
+
+1️. "Live Preview" button dabao (VS Code ke top right side me hota hai).
+2️. Apna webpage browser me open hoga.
+3️. CSS changes try karo aur dekho ki page kaise update hota hai.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------*/
