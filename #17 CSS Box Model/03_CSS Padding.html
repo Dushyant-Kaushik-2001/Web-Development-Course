@@ -1,0 +1,161 @@
+<!---------------------------------------------------------Padding (Inner Space)-------------------------------------------------------
+
+1. Padding is the space between the HTML content and the border. It gives internal spacing and helps to enhance the website.
+
+2. Padding ek CSS property hai jo content aur border ke beech ka space define karti hai. Ye internal spacing provide karti hai, jo content 
+ko border se door rakhne me madad karta hai.
+
+3. In Simple Words, Padding ka kaam content aur border ke beech gap dena hota hai.
+
+4. Syntax of Padding: 
+
+selector{
+    padding: value;                              /* value me hum px (pixels), em, rem, % ya auto de sakte hain.*/
+}
+
+5. For Example:
+
+selector{
+    padding: 10px;                               /* sabhi sides (top, right, bottom, left) pe equal padding dega.*/
+}
+
+
+6. Hum Individual padding bhi set kar sakte hain:
+
+Selector{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+
+
+--------------------------------------------------Different Methods to Set the Padding------------------------------------------------------
+
+🟢 Method 1: Sabhi Sides ke Liye Same Padding
+
+🔹 Agar Humko charo sides (top, right, bottom, left) pe equal padding deni hai, toh ek hi value likh sakte hain.
+
+🔹 Syntax:
+
+selector{
+        padding: value;
+}
+
+🔹 Example 1:
+---------------------------------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        .box {
+            padding: 20px;                             /* 4 taraf 20px ka space */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Hello World</div>
+
+</body>
+
+</html>
+
+<!---------------------------------------------- 
+🔹 Effect:
+Text aur border ke beech 20px ka gap aayega.
+Box bada ho jayega kyunki padding add ho gayi hai. 
+-------------------------------------------------->
+
+<!------------
+🔹 Example 2:
+-------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        #p1{
+            border: 2px solid purple;
+        }
+        #p2 {
+            padding: 12px;
+
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">Dushyant Kaushik (without padding)</p>
+    <p id="p2">Dushyant kaushik (with padding)</p>
+</body>
+</html>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------
+🟢 Method 2: Vertical aur Horizontal Padding Set Karna
+
+🔹 Agar humko sirf y-axis (top-bottom) aur x-axis (left-right) ke liye padding set karni hai, toh 2 values use kar sakte hain.
+
+🔹 Syntax:
+
+selector{
+        padding: value1 value2;                                /* value1 = Top & Bottom, value2 = Left & Right */
+}
+
+🔹 Example:
+-------------------------------------------------------------------------------------------------------------------------------------------- -->
+<html lang="en">
+<head>
+    <style>
+        #p3{
+            border: 2px solid purple;
+        }
+        #p4 {
+            padding: 20px 50px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p id="p3">Dushyant kaushik (without padding)</p>
+    <p id="p4">Dushyant Kaushik (with padding)</p>
+</body>
+
+</html>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------
+🟢 Method 3: Har Side Ki Alag-Alag Padding Set Karna
+
+🔹 Agar hum charo sides ki alag-alag padding set karna chahte hain, toh 4 values likh sakte hain.
+
+🔹 Syntax:
+
+selector{
+        padding: value1 value2 value2 value4;                          /* padding: top right bottom left; */
+}
+
+🔹 Example:
+--------------------------------------------------------------------------------------------------------------------------------------------->
+<html lang="en">
+<head>
+    <style>
+        #p5{
+            border: 2px solid purple;
+        }
+        #p6 {
+            padding: 15px 30px 25px 50px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p id="p5">Dushyant Kaushik (without padding)</p>
+    <p id="p6">Dushyant Kaushik (with padding)</p>
+</body>
+</html>
